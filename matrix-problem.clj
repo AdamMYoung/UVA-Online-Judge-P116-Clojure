@@ -57,7 +57,7 @@
   )
 
 (defn get-possible-paths [current-position, position, matrix, rows, columns]
-(let [next-column (get-column rows columns (+ 1 position) matrix)]                                                    ;Helper function that uses the path variable functions
+  (let [next-column (get-column rows columns (+ 1 position) matrix)]                                                    ;Helper function that uses the path variable functions
                                                                                                                       ;to build a list of possible routes.
      [(get-top-path rows, next-column, current-position)
        (get-middle-path next-column, current-position)
